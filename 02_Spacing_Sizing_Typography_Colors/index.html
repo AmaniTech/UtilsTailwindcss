@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwindcss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <style type="text/tailwindcss">
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body>
+    <h1 class="text-6xl font-bold text-center my-8">
+      <span
+        class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent"
+        >Mari Belajar TailwindCSS</span
+      >
+    </h1>
+
+    <section class="my-10 bg-indigo-200">
+      <h2 class="m-13 text-3xl bg-sky-500">Spacing</h2>
+      <h2
+        class="mx-10 px-5 pt-6 bg-gradient-to-tr from-indigo-500 via-red-500 to-pink-500"
+      >
+        Padding
+      </h2>
+    </section>
+
+    <section class="mb-10 w-50 bg-green-500">
+      <div class="w-20 h-20 bg-yellow-200">kotak 1</div>
+      <!-- <div class="max-w-sm min-h-screen">kotak 2</div> -->
+      <p class="text-red-800">Ini Warna</p>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+      <h2 class="mb-2 text-4xl font-bold">
+        Belajar mengenai Typografi pada tailwind css
+      </h2>
+      <div class="mb-4 text-gray-500">
+        By <span class="text-gray-700 font-bold">Qomarus Zamani</span>, 17 Mei
+        2023
+      </div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet
+        <a href="" class="underline font-semibold text-blue-600">consectetur</a>
+        adipisicing elit. Consectetur, maiores earum. Vel, est explicabo ratione
+        necessitatibus dolores expedita ut totam ab natus molestiae aut velit
+        quo nihil nobis, eum vero qui voluptatem libero! Explicabo architecto,
+        eos perspiciatis est ducimus quod maxime! Ipsam sint aperiam consequatur
+        autem quibusdam omnis voluptates sapiente?
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quidem
+        ab blanditiis fuga assumenda nostrum odit nesciunt eveniet aut iusto!"
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sint
+        nesciunt dolorum eum voluptate magni, aperiam saepe magnam maiores,
+        tempora est corporis nam ad, animi dicta eveniet! Facilis, tempore qui!
+      </p>
+    </section>
+  </body>
+</html>
