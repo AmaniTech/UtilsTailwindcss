@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwindcss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+    <!-- <style type="text/tailwindcss">
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body>
+    <h1 class="text-6xl font-bold text-center my-8">
+      <span
+        class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent"
+        >Mari Belajar TailwindCSS</span
+      >
+    </h1>
+    <!-- 42px custom, karena tidak ada nilai bawaan dari tailwindcss -->
+    <!-- [] = untuk custom -->
+    <div
+      class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed"
+      style="
+        background-image: url('https://source.unsplash.com/1000x600?school');
+      "
+    >
+      <p class="p-5 text-2xl">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia a
+        officia dolor culpa. Et illo doloremque, porro placeat nihil ullam qui
+        ea ipsa asperiores delectus, magni harum vitae minus nulla maiores
+        dolores, corporis accusantium blanditiis repellat fugit labore sint!
+        Atque nihil laudantium possimus aut voluptatem, quas dolores in,
+        molestiae adipisci a nisi exercitationem deserunt ipsa impedit, odit
+        nulla. Voluptatibus sint impedit officiis porro praesentium rerum
+        laborum quo eaque repudiandae asperiores magni adipisci aliquid error,
+        laboriosam temporibus iusto saepe voluptatem corrupti labore vitae.
+        Error minima deserunt, obcaecati perspiciatis, est laborum numquam
+        voluptates distinctio ducimus quo ex esse a nemo magnam? Quidem, nihil
+        minus sit pariatur ipsam deleniti nisi aspernatur numquam ut doloremque
+        fugit voluptatem voluptates quisquam ab vitae! Neque sapiente aut
+        explicabo illum mollitia, commodi eos et fuga perferendis dolorem velit
+        blanditiis reiciendis officia. Veniam iste ducimus rerum? Nulla nisi
+        eveniet quo aliquam sint laudantium quidem quia voluptatibus vel quas
+        fuga ab animi optio debitis sunt pariatur, error placeat doloremque ad.
+        Perspiciatis ex quos doloremque possimus ducimus corrupti suscipit,
+        fugit velit unde odit, dolores facilis ratione sed enim vitae molestiae
+        dolore, architecto repellendus. Sequi animi ex nisi! Eveniet explicabo
+        sed natus maiores dolore ex voluptate ut facilis dolor illum. Delectus,
+        dicta.
+      </p>
+    </div>
+
+    <!-- oppacity = transparansi -->
+    <!-- overflow = kalo ada yang tumpah , sembunyikan -->
+    <!-- menggabungkan warna dan gambar = blend -->
+
+    <div
+      class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-t-2xl border-4 border-red-300 shadow-lg shadow-red-300 opacity-90 overflow-hidden blur-sm hover:blur-none"
+      style="
+        background-image: url('https://source.unsplash.com/1000x600?laptop');
+      "
+    >
+      <div class="w-full h-full bg-blue-300 mix-blend-multiply"></div>
+    </div>
+
+    <!-- ---------------- -->
+    <div
+      class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-t-2xl border-1 border-red-300 shadow-lg shadow-red-300 opacity-90 overflow-hidden flex"
+      style="
+        background-image: url('https://source.unsplash.com/1000x600?laptop');
+      "
+    >
+      <div
+        class="w-[200px] h-[200px] bg-black/50 m-auto backdrop-blur-sm"
+      ></div>
+    </div>
+
+    <div class="mb-96"></div>
+  </body>
+</html>
